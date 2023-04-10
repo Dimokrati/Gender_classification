@@ -1,0 +1,255 @@
+
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+*:before,*after{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.container{
+    height:100%;
+    width:100%;
+    /* background: rgb(250,108,255);
+    background: linear-gradient(90deg, rgba(250,108,255,1) 18%, rgba(250,92,255,1) 33%, rgba(0,212,255,1) 100%); */
+    background-color: #fff;
+    background: url('./magicpattern-mesh-gradient-1680219843849.png');background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size:cover;
+    background-position: center;
+    position:relative;
+}
+
+.navbar{
+    width: 88%;
+    margin:auto;
+    padding:15px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 200px;
+    cursor:pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display:inline-block;
+    margin:0 15px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #5f5f5f;
+    font-size: 15px;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+.cont{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.m{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    cursor: pointer;
+    border: none;
+    animation: border-fill 3s forwards;
+    box-shadow: 0px 0px 10px #5f5f5f89;
+    transition: 0.5s ease;
+}
+
+.m:hover{
+    box-shadow: 0px 0px 15px #5f5f5f89;
+}
+
+.m:hover i {
+    color: red;
+    text-shadow: 0px 0px 10px #5f5f5f89;
+}
+
+
+.recbtn{
+    text-decoration: none;
+}
+
+i{
+    /* position: absolute;
+    left: 28%;
+    top: 20%; */
+    transition: 0.5s ease;
+} 
+
+.timer{
+    position: absolute;
+    left: 47%;
+    top: 58%;
+}
+
+.load{
+    height: 70px;
+    display: flex;
+    align-items: center ;
+    /* margin-left: 520px;
+    margin-top: 300px; */
+}
+
+.str{
+    display: block;
+    position: relative;
+    background: rgba(45, 130, 249, 0.949);
+    height: 10%;
+    width: 4px;
+    border-radius: 50px;
+    margin: 0 5px;
+    /* animation: animate 1.2s linear infinite;
+    animation-play-state: running; */
+}
+
+.animate {
+    animation: animate 1.2s linear infinite;
+    animation-play-state: running;
+  }
+
+  @keyframes animate {
+    0% {
+      height: 10%;
+    }
+    10% {
+      height: 20%;
+    }
+    20% {
+      height: 30%;
+    }
+    30% {
+      height: 40%;
+    }
+    40% {
+      height: 50%;
+    }
+    50% {
+      height: 60%;
+    }
+    60% {
+      height: 50%;
+    }
+    70% {
+      height: 40%;
+    }
+    80% {
+      height: 30%;
+    }
+    90% {
+      height: 20%;
+    }
+    100% {
+      height: 10%;
+    }
+  }
+
+.str:nth-child(1){
+    animation-delay: 0s;
+
+}
+.str:nth-child(2){
+    animation-delay: 0.1s;
+    
+}
+.str:nth-child(3){
+    animation-delay: 0.2s;
+    
+}
+.str:nth-child(4){
+    animation-delay: 0.3s;
+    
+}
+.str:nth-child(5){
+    animation-delay: 0.4s;
+    
+}
+.str:nth-child(6){
+    animation-delay: 0.5s;
+    
+}
+.str:nth-child(8){
+    animation-delay: 0.6s;
+    
+}
+.str:nth-child(9){
+    animation-delay: 0.7s;
+    
+}
+.str:nth-child(10){
+    animation-delay: 0.8s;
+
+}
+.str:nth-child(11){
+    animation-delay: 0.9s;
+    
+}
+.str:nth-child(12){
+    animation-delay: 0.10s;
+    
+}
+.str:nth-child(13){
+    animation-delay: 0.11s;
+    
+}
+.str:nth-child(14){
+    animation-delay: 0.12s;
+    
+}
+.str:nth-child(15){
+    animation-delay: 0.13s;
+    
+}
+.str:nth-child(16){
+    animation-delay: 0.14s;
+    
+}
+.str:nth-child(17){
+    animation-delay: 0.15s;
+    
+}
+
+
+
+
+@media screen {
+    
+}

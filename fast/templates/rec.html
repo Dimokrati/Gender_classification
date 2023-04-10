@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/rec.css">
+    
+    <title>Recording </title>
+</head>
+<body>
+    <div class="container" id="home">
+        <div class="navbar">
+            <a href="/">
+                <img src="/static/recogen.png" class="logo">
+            </a>
+            
+            <!-- <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rec" class="scroll">Results</a></li>    
+                <li><a href="rec.html">Rec</a></li>
+            </ul> -->
+        </div>
+        <div class="cont">
+        <!-- <a href="" class="recbtn"> -->
+            <button id="btn" class="m"  onclick="recordAudio();startAnimation();startAnimationbar() ">
+                <i class="fa-solid fa-microphone"></i>
+            </button>
+            <!-- <script>
+                
+
+                async function sendAudioFileToServer(blobPromise) {
+                    const blob = await blobPromise;
+                    const formData = new FormData();
+                    formData.append('audio', blob, 'recording.wav');
+                    try {
+                        const response = await fetch('http://localhost:8000/recording', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': multipart/form-data
+                        },
+                        body: formData
+                        });
+                        const result = await response.json();
+                        console.log('Server response:', result);
+                    } catch (error) {
+                        console.error('Failed to upload audio file:', error);
+                    }
+                    }
+                // async function sendAudioFileToServer(audioFile) {
+                //     console.log('sending data')
+                //     const apiUrl = 'http://localhost:8000/recording';
+                    
+                //     const formData = new FormData();
+                //     formData.append('file', audioFile);
+                    
+                //     const response = await fetch(apiUrl, {
+                //         method: 'POST',
+                //         body: formData,
+                //     });
+
+                //     if (!response.ok) {
+                //         throw new Error(`Failed to upload audio file: ${response.status} ${response.statusText}`);
+                //     }
+                    
+                //     const responseData = await response.json();
+                //     return responseData.data;
+                // }
+
+                
+            </script> -->
+        <!-- </a> -->
+            <div id="load" class="load">
+                <span id="1" class="str"></span>
+                <span id="2" class="str"></span>
+                <span id="3" class="str"></span>
+                <span id="4" class="str"></span>
+                <span id="5" class="str"></span>
+                <span id="6" class="str"></span>
+                <span id="7" class="str"></span>
+                <span id="8" class="str"></span>
+                <span id="9" class="str"></span>
+                <span id="10" class="str"></span>
+                <span id="11" class="str"></span>
+                <span id="12" class="str"></span>
+                <span id="13" class="str"></span>
+                <span id="14" class="str"></span>
+                <span id="15" class="str"></span>
+                <span id="16" class="str"></span>
+                <span id="17" class="str"></span>
+                <span id="18" class="str"></span>
+            </div>
+        </div>
+        
+        <!-- <h1 class="w">Records</h1> -->
+
+    </div>
+    
+    <script src="/static/recjs.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+
+</body>
+</html>
