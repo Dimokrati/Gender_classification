@@ -16,63 +16,13 @@
             <a href="/">
                 <img src="/static/recogen.png" class="logo">
             </a>
-            
-            <!-- <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#rec" class="scroll">Results</a></li>    
-                <li><a href="rec.html">Rec</a></li>
-            </ul> -->
         </div>
         <div class="cont">
         <!-- <a href="" class="recbtn"> -->
             <button id="btn" class="m"  onclick="recordAudio();startAnimation();startAnimationbar() ">
                 <i class="fa-solid fa-microphone"></i>
             </button>
-            <!-- <script>
-                
-
-                async function sendAudioFileToServer(blobPromise) {
-                    const blob = await blobPromise;
-                    const formData = new FormData();
-                    formData.append('audio', blob, 'recording.wav');
-                    try {
-                        const response = await fetch('http://localhost:8000/recording', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': multipart/form-data
-                        },
-                        body: formData
-                        });
-                        const result = await response.json();
-                        console.log('Server response:', result);
-                    } catch (error) {
-                        console.error('Failed to upload audio file:', error);
-                    }
-                    }
-                // async function sendAudioFileToServer(audioFile) {
-                //     console.log('sending data')
-                //     const apiUrl = 'http://localhost:8000/recording';
-                    
-                //     const formData = new FormData();
-                //     formData.append('file', audioFile);
-                    
-                //     const response = await fetch(apiUrl, {
-                //         method: 'POST',
-                //         body: formData,
-                //     });
-
-                //     if (!response.ok) {
-                //         throw new Error(`Failed to upload audio file: ${response.status} ${response.statusText}`);
-                //     }
-                    
-                //     const responseData = await response.json();
-                //     return responseData.data;
-                // }
-
-                
-            </script> -->
-        <!-- </a> -->
+           
             <div id="load" class="load">
                 <span id="1" class="str"></span>
                 <span id="2" class="str"></span>
