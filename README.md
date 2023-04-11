@@ -1,2 +1,2 @@
 # Gender_classification
-A voicr recognition using CNN
+A voice recognition using CNN
